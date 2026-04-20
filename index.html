@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Do Tuan Linh | Professional Profile</title>
+  <meta name="description" content="Professional profile of Do Tuan Linh, Senior Project Manager specializing in offshore capital mobilization and international funding projects for the banking sector." />
+  <style>
+    :root{
+      --primary:#0d2f5b;
+      --secondary:#f07d22;
+      --text:#17212b;
+      --muted:#5d6b7a;
+      --bg:#f5f7fa;
+      --card:#ffffff;
+      --line:#dbe3ec;
+      --shadow:0 18px 45px rgba(14,34,64,.12);
+      --radius:22px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      color:var(--text);
+      background:linear-gradient(180deg,#eef3f8 0%, #f8fafc 100%);
+      line-height:1.65;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(var(--max),calc(100% - 32px));margin:0 auto}
+    .topbar{
+      position:sticky;top:0;z-index:10;
+      backdrop-filter: blur(14px);
+      background:rgba(248,250,252,.82);
+      border-bottom:1px solid rgba(219,227,236,.75);
+    }
+    .topbar-inner{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:14px 0;gap:18px;
+    }
+    .brand{display:flex;align-items:center;gap:14px;font-weight:700;color:var(--primary)}
+    .brand-badge{
+      width:42px;height:42px;border-radius:14px;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg,var(--secondary),#ffb168);
+      color:#fff;font-weight:800;font-size:14px;letter-spacing:.04em;
+      box-shadow:0 10px 24px rgba(240,125,34,.24);
+    }
+    .brand small{display:block;color:var(--muted);font-weight:600;font-size:12px}
+    .lang-switch{
+      display:inline-flex;gap:6px;background:#fff;border:1px solid var(--line);
+      border-radius:999px;padding:5px;box-shadow:0 8px 24px rgba(16,35,63,.06);
+    }
+    .lang-btn{
+      border:0;background:transparent;color:var(--muted);
+      font-weight:700;padding:10px 16px;border-radius:999px;cursor:pointer;
+      transition:.25s ease;
+    }
+    .lang-btn.active{background:var(--primary);color:#fff}
+    .hero{padding:44px 0 26px}
+    .hero-card{
+      background:var(--card);border:1px solid rgba(219,227,236,.72);
+      border-radius:30px;box-shadow:var(--shadow);overflow:hidden;
+      display:grid;grid-template-columns:1.05fr 1fr;
+    }
+    .hero-media{
+      min-height:500px;position:relative;background:#d7e4ef;
+    }
+    .hero-media img{
+      width:100%;height:100%;object-fit:cover;
+    }
+    .hero-panel{
+      padding:42px 40px 38px;
+      background:
+        radial-gradient(circle at top right, rgba(240,125,34,.10), transparent 26%),
+        linear-gradient(180deg,#ffffff,#fbfdff);
+    }
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:8px;
+      background:rgba(13,47,91,.06);color:var(--primary);
+      border:1px solid rgba(13,47,91,.08);
+      padding:8px 14px;border-radius:999px;font-size:13px;font-weight:800;
+      letter-spacing:.02em;text-transform:uppercase;
+    }
+    h1{
+      margin:18px 0 8px;font-size:46px;line-height:1.08;color:#102a4a;
+      letter-spacing:-.03em;
+    }
+    .subtitle{
+      font-size:20px;font-weight:700;color:var(--secondary);line-height:1.4;
+      max-width:700px;
+    }
+    .lead{
+      margin:18px 0 26px;color:var(--muted);font-size:16px;
+    }
+    .contact-grid{
+      display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;
+      margin-top:22px;
+    }
+    .contact-item{
+      border:1px solid var(--line);border-radius:18px;padding:14px 16px;background:#fff;
+    }
+    .contact-label{
+      font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);
+      margin-bottom:4px;
+    }
+    .contact-value{font-weight:700;color:#1a2b3d}
+    .contact-value a{color:var(--primary)}
+    .section{padding:18px 0}
+    .grid{
+      display:grid;grid-template-columns:1.25fr .75fr;gap:22px;
+      align-items:start;
+    }
+    .card{
+      background:var(--card);border:1px solid rgba(219,227,236,.8);
+      border-radius:var(--radius);box-shadow:0 10px 26px rgba(12,31,55,.06);
+      padding:28px;
+    }
+    h2{
+      margin:0 0 16px;font-size:25px;line-height:1.2;color:#102a4a;
+      letter-spacing:-.02em;
+    }
+    .section-intro{color:var(--muted);margin:0}
+    .highlight-list{display:grid;gap:14px;margin-top:18px}
+    .highlight{
+      border:1px solid var(--line);border-radius:18px;padding:16px 18px;background:#fbfdff;
+    }
+    .highlight strong{color:var(--primary)}
+    .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px}
+    .stat{
+      background:linear-gradient(180deg,#ffffff,#f7fbff);
+      border:1px solid var(--line);border-radius:18px;padding:18px 16px;
+      text-align:center;
+    }
+    .stat-number{font-size:28px;font-weight:800;color:var(--primary);line-height:1}
+    .stat-label{font-size:13px;color:var(--muted);margin-top:8px}
+    .timeline{display:grid;gap:16px}
+    .timeline-item{
+      position:relative;padding-left:20px;
+      border-left:2px solid #d7e1ec;
+    }
+    .timeline-item:before{
+      content:"";position:absolute;left:-7px;top:4px;width:12px;height:12px;border-radius:50%;
+      background:var(--secondary);box-shadow:0 0 0 4px rgba(240,125,34,.15);
+    }
+    .timeline-top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .timeline-title{font-weight:800;color:#102a4a}
+    .timeline-sub{color:var(--muted);font-weight:700}
+    .timeline-time{color:var(--secondary);font-weight:800}
+    ul.clean{margin:10px 0 0 18px;padding:0}
+    ul.clean li{margin:6px 0}
+    .tag-wrap{display:flex;flex-wrap:wrap;gap:10px}
+    .tag{
+      padding:10px 14px;border-radius:999px;border:1px solid var(--line);
+      background:#fff;font-weight:700;color:#29415c;font-size:14px;
+    }
+    .photo-card img{border-radius:18px;aspect-ratio:4/3;object-fit:cover}
+    footer{
+      padding:28px 0 42px;color:var(--muted);text-align:center;font-size:14px;
+    }
+    [data-lang]{display:none}
+    html.lang-vi [data-lang="vi"]{display:block}
+    html.lang-en [data-lang="en"]{display:block}
+    @media (max-width: 980px){
+      .hero-card,.grid{grid-template-columns:1fr}
+      .hero-media{min-height:380px}
+      .hero-panel{padding:30px 24px}
+      h1{font-size:38px}
+      .stats{grid-template-columns:1fr}
+    }
+    @media (max-width: 640px){
+      .container{width:min(var(--max),calc(100% - 20px))}
+      .topbar-inner{flex-direction:column;align-items:flex-start}
+      .contact-grid{grid-template-columns:1fr}
+      h1{font-size:32px}
+      .subtitle{font-size:18px}
+      .card{padding:22px}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <div class="brand-badge">DL</div>
+        <div>
+          Do Tuan Linh
+          <small>Professional Profile</small>
+        </div>
+      </div>
+      <div class="lang-switch" aria-label="Language switcher">
+        <button class="lang-btn active" data-set-lang="en">English</button>
+        <button class="lang-btn" data-set-lang="vi">Tiếng Việt</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-card">
+          <div class="hero-media">
+            <img src="7DB3C9F4-01E8-4450-8105-FD6D328F0813.jpeg" alt="Do Tuan Linh portrait" />
+          </div>
+          <div class="hero-panel">
+            <div class="eyebrow" data-lang="en">Professional Profile</div>
+            <div class="eyebrow" data-lang="vi">Hồ sơ nghề nghiệp</div>
+
+            <h1>Do Tuan Linh</h1>
+
+            <div class="subtitle" data-lang="en">
+              Senior Project Manager specializing in managing and coordinating offshore capital mobilization and international funding projects for banks
+            </div>
+            <div class="subtitle" data-lang="vi">
+              Chuyên viên cao cấp quản lý dự án, chuyên quản lý và điều phối các dự án huy động vốn offshore và tài trợ quốc tế cho ngân hàng
+            </div>
+
+            <p class="lead" data-lang="en">
+              Banking and finance professional with more than 10 years of experience across trade finance, large corporate client management, and international project development, with a strong track record in cross-border fundraising and multi-stakeholder project delivery.
+            </p>
+            <p class="lead" data-lang="vi">
+              Chuyên gia trong lĩnh vực ngân hàng và tài chính với hơn 10 năm kinh nghiệm trong tài trợ thương mại, quản lý khách hàng doanh nghiệp lớn và phát triển dự án quốc tế, có thành tích vững chắc trong huy động vốn xuyên biên giới và triển khai các dự án có nhiều bên liên quan.
+            </p>
+
+            <div class="contact-grid">
+              <div class="contact-item">
+                <div class="contact-label" data-lang="en">Email</div>
+                <div class="contact-label" data-lang="vi">Email</div>
+                <div class="contact-value"><a href="mailto:linh.dt6@shb.com.vn">linh.dt6@shb.com.vn</a><br><span style="font-weight:500;color:#5d6b7a">linhta91@gmail.com (personal)</span></div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-label" data-lang="en">Mobile</div>
+                <div class="contact-label" data-lang="vi">Di động</div>
+                <div class="contact-value"><a href="tel:+84904837899">+84 904 837 899</a></div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-label" data-lang="en">Organization</div>
+                <div class="contact-label" data-lang="vi">Tổ chức</div>
+                <div class="contact-value">Saigon - Hanoi Commercial Joint Stock Bank (SHB)</div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-label" data-lang="en">Office</div>
+                <div class="contact-label" data-lang="vi">Văn phòng</div>
+                <div class="contact-value">81 Tran Hung Dao Street, Hoan Kiem District, Hanoi</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid">
+        <div class="card">
+          <h2 data-lang="en">Profile Summary</h2>
+          <h2 data-lang="vi">Tóm tắt hồ sơ</h2>
+
+          <p class="section-intro" data-lang="en">
+            As the focal point for foreign fundraising at SHB, Do Tuan Linh has coordinated and implemented bilateral commercial loans, syndicated loans, international bond issuances, and ODA-funded initiatives with a total scale approaching USD 1 billion.
+          </p>
+          <p class="section-intro" data-lang="vi">
+            Với vai trò đầu mối huy động vốn nước ngoài tại SHB, Đỗ Tuấn Linh đã điều phối và triển khai các khoản vay thương mại song phương, vay hợp vốn, phát hành trái phiếu quốc tế và các dự án sử dụng vốn ODA với tổng quy mô xấp xỉ 1 tỷ USD.
+          </p>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-number">10+ </div>
+              <div class="stat-label" data-lang="en">Years of experience</div>
+              <div class="stat-label" data-lang="vi">Năm kinh nghiệm</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">~USD 1B</div>
+              <div class="stat-label" data-lang="en">International fundraising scale</div>
+              <div class="stat-label" data-lang="vi">Quy mô huy động vốn quốc tế</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">EN / VI</div>
+              <div class="stat-label" data-lang="en">Bilingual coordination</div>
+              <div class="stat-label" data-lang="vi">Điều phối song ngữ</div>
+            </div>
+          </div>
+
+          <div class="highlight-list">
+            <div class="highlight">
+              <div data-lang="en"><strong>Core specialization:</strong> Offshore capital mobilization, international funding structures, and end-to-end coordination of complex banking projects involving foreign lenders, investors, donors, and domestic regulators.</div>
+              <div data-lang="vi"><strong>Chuyên môn cốt lõi:</strong> Huy động vốn offshore, cấu trúc tài trợ quốc tế và điều phối trọn vòng đời các dự án ngân hàng phức tạp với sự tham gia của bên cho vay nước ngoài, nhà đầu tư, nhà tài trợ và cơ quan quản lý trong nước.</div>
+            </div>
+            <div class="highlight">
+              <div data-lang="en"><strong>Institutional exposure:</strong> Experience working with the World Bank, ADB, IFC, JICA, and Vietnamese authorities on funding mechanisms, policy alignment, implementation, and compliance.</div>
+              <div data-lang="vi"><strong>Kinh nghiệm làm việc với định chế:</strong> Có kinh nghiệm phối hợp với World Bank, ADB, IFC, JICA và các cơ quan quản lý của Việt Nam về cơ chế tài trợ, chính sách, triển khai dự án và tuân thủ.</div>
+            </div>
+            <div class="highlight">
+              <div data-lang="en"><strong>Management style:</strong> Structured, detail-oriented, and execution-focused, with strong negotiation, reporting, and cross-functional coordination capabilities.</div>
+              <div data-lang="vi"><strong>Phong cách quản lý:</strong> Bài bản, chú trọng chi tiết và định hướng thực thi, cùng năng lực tốt về đàm phán, báo cáo và điều phối liên phòng ban.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card photo-card">
+          <img src="B9094307-423C-4DB3-8CEF-02FBFC790278.jpeg" alt="Do Tuan Linh professional portrait" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid">
+        <div class="card">
+          <h2 data-lang="en">Professional Experience</h2>
+          <h2 data-lang="vi">Kinh nghiệm nghề nghiệp</h2>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-top">
+                <div>
+                  <div class="timeline-title" data-lang="en">International Project Manager</div>
+                  <div class="timeline-title" data-lang="vi">Quản lý dự án quốc tế</div>
+                  <div class="timeline-sub">International Project Management Department – SHB Head Office</div>
+                </div>
+                <div class="timeline-time">09/2019 – Present</div>
+              </div>
+              <ul class="clean" data-lang="en">
+                <li>Lead engagement with foreign banks, investors, and intermediaries for bilateral loans, syndicated facilities, and international bond transactions.</li>
+                <li>Coordinate internal stakeholders in negotiations covering pricing, loan terms, contractual structures, and project regulations.</li>
+                <li>Act as a focal point in implementing and managing international funding and ODA-related projects.</li>
+                <li>Prepare applications, progress reports, and compliance documentation for internal management, regulators, and sponsors.</li>
+              </ul>
+              <ul class="clean" data-lang="vi">
+                <li>Dẫn dắt việc làm việc với các ngân hàng nước ngoài, nhà đầu tư và bên trung gian cho các khoản vay song phương, vay hợp vốn và giao dịch trái phiếu quốc tế.</li>
+                <li>Điều phối các đơn vị nội bộ trong quá trình đàm phán về giá vốn, điều khoản khoản vay, cấu trúc hợp đồng và quy định dự án.</li>
+                <li>Đóng vai trò đầu mối trong triển khai và quản lý các dự án huy động vốn quốc tế và các dự án liên quan đến ODA.</li>
+                <li>Chuẩn bị hồ sơ, báo cáo tiến độ và tài liệu tuân thủ cho ban lãnh đạo, cơ quan quản lý và nhà tài trợ.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-top">
+                <div>
+                  <div class="timeline-title" data-lang="en">Large Corporate Customer Relation Manager</div>
+                  <div class="timeline-title" data-lang="vi">Quản lý quan hệ khách hàng doanh nghiệp lớn</div>
+                  <div class="timeline-sub">VietinBank Nam Thang Long Branch</div>
+                </div>
+                <div class="timeline-time">01/2014 – 04/2016</div>
+              </div>
+              <ul class="clean" data-lang="en">
+                <li>Develop and maintain relationships with large corporate clients while identifying financing and banking product opportunities.</li>
+                <li>Review legal and financial documents, assess collateral quality, and analyze financing plans.</li>
+                <li>Prepare credit proposals and manage loan records during the financing lifecycle.</li>
+              </ul>
+              <ul class="clean" data-lang="vi">
+                <li>Phát triển và duy trì quan hệ với khách hàng doanh nghiệp lớn, đồng thời xác định nhu cầu tài trợ và cơ hội sử dụng sản phẩm ngân hàng.</li>
+                <li>Rà soát hồ sơ pháp lý, tài chính, đánh giá chất lượng tài sản bảo đảm và phân tích phương án cấp tín dụng.</li>
+                <li>Chuẩn bị tờ trình tín dụng và quản lý hồ sơ khách hàng trong suốt vòng đời khoản vay.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-top">
+                <div>
+                  <div class="timeline-title" data-lang="en">Trade Finance Officer</div>
+                  <div class="timeline-title" data-lang="vi">Chuyên viên tài trợ thương mại</div>
+                  <div class="timeline-sub">VietinBank Nam Thang Long Branch</div>
+                </div>
+                <div class="timeline-time">08/2013 – 12/2013</div>
+              </div>
+              <ul class="clean" data-lang="en">
+                <li>Handle applications for bank guarantees and letters of credit.</li>
+                <li>Support approval processes and daily foreign currency trading operations.</li>
+              </ul>
+              <ul class="clean" data-lang="vi">
+                <li>Tiếp nhận và xử lý hồ sơ phát hành bảo lãnh ngân hàng và thư tín dụng.</li>
+                <li>Hỗ trợ quy trình phê duyệt và vận hành giao dịch ngoại tệ hằng ngày.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 data-lang="en">Education & Expertise</h2>
+          <h2 data-lang="vi">Học vấn & năng lực</h2>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-title">La Trobe University (Australia)</div>
+              <div class="timeline-sub" data-lang="en">Master of Financial Analysis</div>
+              <div class="timeline-sub" data-lang="vi">Thạc sĩ Phân tích tài chính</div>
+              <div class="timeline-time">02/2017 – 11/2018</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-title">Banking Academy</div>
+              <div class="timeline-sub" data-lang="en">Bachelor of Banking & Finance</div>
+              <div class="timeline-sub" data-lang="vi">Cử nhân Ngân hàng và Tài chính</div>
+              <div class="timeline-time">09/2009 – 06/2013</div>
+            </div>
+          </div>
+
+          <div style="height:16px"></div>
+
+          <div class="tag-wrap">
+            <div class="tag" data-lang="en">Offshore Capital Mobilization</div>
+            <div class="tag" data-lang="vi">Huy động vốn offshore</div>
+
+            <div class="tag" data-lang="en">International Funding Projects</div>
+            <div class="tag" data-lang="vi">Dự án tài trợ quốc tế</div>
+
+            <div class="tag" data-lang="en">Project Management</div>
+            <div class="tag" data-lang="vi">Quản lý dự án</div>
+
+            <div class="tag" data-lang="en">Negotiation</div>
+            <div class="tag" data-lang="vi">Đàm phán</div>
+
+            <div class="tag" data-lang="en">Financial Analysis</div>
+            <div class="tag" data-lang="vi">Phân tích tài chính</div>
+
+            <div class="tag" data-lang="en">Cross-Functional Coordination</div>
+            <div class="tag" data-lang="vi">Điều phối liên phòng ban</div>
+
+            <div class="tag" data-lang="en">Proposal & Report Writing</div>
+            <div class="tag" data-lang="vi">Viết đề xuất và báo cáo</div>
+
+            <div class="tag" data-lang="en">English / Vietnamese</div>
+            <div class="tag" data-lang="vi">Tiếng Anh / Tiếng Việt</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div data-lang="en">© Professional Profile of Do Tuan Linh</div>
+      <div data-lang="vi">© Hồ sơ nghề nghiệp của Đỗ Tuấn Linh</div>
+    </div>
+  </footer>
+
+  <script>
+    const root = document.documentElement;
+    const buttons = document.querySelectorAll('[data-set-lang]');
+    function setLang(lang){
+      root.classList.remove('lang-en','lang-vi');
+      root.classList.add('lang-' + lang);
+      root.setAttribute('lang', lang);
+      localStorage.setItem('preferred_lang', lang);
+      buttons.forEach(btn => btn.classList.toggle('active', btn.dataset.setLang === lang));
+    }
+    buttons.forEach(btn => btn.addEventListener('click', () => setLang(btn.dataset.setLang)));
+    setLang(localStorage.getItem('preferred_lang') || 'en');
+  </script>
+</body>
+</html>
